@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('backgroudn_gen_emp.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; /* This ensures that the background image covers the entire area of the body */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-attachment: fixed; /* This makes the background image fixed in the viewport */
+    background-position: center;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.5); 
+    
+}
+nav {
+    height: 40px; /* Sets the height of the navigation bar */
+    /* Other styles for your navigation bar */
+}
+
+.logo {
+    height: 50px;
+    margin: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.myLogo li {
+    list-style-type: none; /* Removes the bullet point */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Example: creates a flexible number of columns */
+    gap: 10px; /* Space between grid items */
+    width: 66.67%;
+    margin: auto; /* Centers the grid container */
+    background-color: rgba(255, 255, 255, 0.55); /* White background with 75% opacity */
+    padding: 20px; /* Optional: adds some space inside the grid container */
+    /* Other styles as needed */
+}
+
+
+.content-container {
+    max-width: 800px; /* Set a max-width for the content container */
+    margin: left; /* Center the container */
+    padding: 20px; /* Add padding around the content */
+}
+
+.content-container section, .content-container footer {
+    margin-bottom: 40px; /* Add space between sections */
+}
+
+.content-container h2 {
+    font-size: 24px; /* Heading size */
+    color: #0056b3; /* Heading color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.content-container h3 {
+    font-size: 20px; /* Subheading size */
+    color: #004494; /* Subheading color */
+    margin-top: 20px; /* Space above the subheading */
+    margin-bottom: 10px; /* Space below the subheading */
+}
+
+.content-container p {
+    font-size: 16px; /* Paragraph text size */
+    line-height: 1.6; /* Line height for paragraph text */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+.content-container footer p {
+    font-style: italic;
+    text-align: left;
+    margin-top: 40px;
+}
+
+
+.image-container {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center; /* Centers the images vertically */
+    gap: 20px; /* Adds space between the images */
+}
+
+.image-container img {
+    max-width: 45%; /* Adjusts the maximum width of each image */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+/* CSS for Images */
+img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures no extra space around the image */
+    margin: 0 auto; /* Centers the image */
+}
+
+/* CSS for YouTube Video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 20px; /* Spacing below the video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+}
